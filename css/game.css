@@ -1,0 +1,158 @@
+body {
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#bodydiv {
+    display: grid;
+    grid-template-columns: 17fr 1fr;
+}
+
+.emptyCircle {
+    width: 50px;
+    height: 50px;
+    background: rgb(255, 255, 255);
+    border-radius: 100%;
+    border: 3px solid rgb(77, 73, 73);
+    margin: 5px;
+}
+
+.computerBorder {
+    border: 3px solid rgb(77, 73, 73);
+    width: 18%;
+    margin-left: 36.5%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.checkButton {
+    border: none;
+    color: #008CBA;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.checkButton:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+.row {
+    display: flex;
+}
+
+.playerBorder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.divCircels {
+    display: flex;
+}
+
+.borderColorfullCircles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 3px solid rgb(77, 73, 73);
+    padding: 5%;
+    height: 500px;
+}
+
+.colorfullCircle {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.color1 {
+    background: red;
+}
+
+.color2 {
+    background: orange;
+}
+
+.color3 {
+    background: pink;
+}
+
+.color4 {
+    background: yellow;
+}
+
+.color5 {
+    background: rgb(9, 173, 9);
+}
+
+.color6 {
+    background: rgb(22, 162, 180);
+}
+
+.color7 {
+    background: rgb(57, 102, 248);
+}
+
+.color8 {
+    background: purple;
+}
+
+.dragging {
+    opacity: 0.5;
+}
+
+.winlose.open {
+    display: block;
+}
+/* דף סיום */
+.modal {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: pink;
+    border: 10px solid white;
+    text-align: center;
+    z-index: 999;
+    display: none;
+}
+
+.modal .m-row {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 50%;
+    transform: translate(0%, -50%);
+    padding: 0px 15px;
+}
+
+.modal .m-row p {
+    margin: 0px;
+    font-family: 'Schoolbell', cursive;
+    color: #fff;
+    font-size: 25px;
+}
+
+.modal .m-row .message {
+    font-size: 80px;
+}
+
+.modal .m-row .close-modal {
+    display: inline-block;
+    margin: 30px 0px 0px;
+    cursor: pointer;
+    padding: 5px 7px;
+    border-bottom: 2px solid #fff;
+    font-size: 35px;
+}
